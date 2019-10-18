@@ -1,0 +1,645 @@
+.contenido {
+  position: relative;
+}
+
+.contenido-grande{
+  display: none;
+}
+
+.contenido-child img{
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+.contenido-child.imagen {
+  padding: 2em;
+  width: 80%;
+  margin:auto;
+}
+
+.informacion, .tutoriales {
+  display:flex;
+  flex-direction: column;
+}
+
+.informacion-caja, #entrenadores-funcional, #entrenadores-maquinas, #vision-mov{
+  border-top: solid 2px #fefb64;
+}
+
+.informacion-caja#primeraCaja {
+  border-top: none;
+}
+
+.imagen{
+  filter: grayscale(1);
+}
+
+.imagen.visible{
+  filter: grayscale(0);
+}
+
+.informacion-caja.imagen {
+  padding: 2em;
+  width: 80%;
+  margin:auto;
+}
+
+.informacion-caja span {
+  display:none;
+}
+
+.informacion-caja ul {
+  margin-left: 1em;
+}
+
+.informacion-caja ul li {
+  list-style-type: disc;
+}
+
+.informacion-caja.servicios {
+  border-top:none;
+  margin-top: 20px;
+}
+
+.informacion-caja.servicios img {
+  border-radius: 0;
+}
+
+.serv-vinc {
+    text-align: center;
+    padding: 0;
+}
+
+.informacion-caja.tutorial {
+  display: flex;
+  flex-direction: column;
+}
+
+.informacion-caja.tutorial div{
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonios{
+  background-image: url(https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/textura1.png);
+}
+
+.testimonios h2{
+  text-align: left;
+  color: #fff;
+  padding: 20px;
+}
+
+#testimonios-caja {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonio-text {
+  width: 100%;
+  margin: 10px;
+  background-color: #fefb64;
+  border-radius: 10px;
+}
+
+.videos #siguiente, .videos #previo {
+  background-color: #fff;
+  bottom: 10px;
+  position: absolute;
+  border: none;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.5s;
+  opacity: 0.5;
+  max-width: 25px;
+}
+
+.videos #siguiente {
+  right: 5%;
+  background-image: url('https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/chevron-right.png');
+}
+
+.videos #previo {
+  left: 5%;
+  background-image: url('https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/chevron-left.png');
+}
+
+.videos #siguiente.active:hover, .videos #siguiente.active:focus, .videos #previo.active:hover, .videos #previo.active:focus {
+  transition: all 0.5s;
+  opacity: 1.0;
+  cursor: pointer;
+}
+
+.videos .botones-siguiente{
+  position:absolute;
+  bottom: 75px;
+  width: 200px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.videos .boton-siguiente{
+  transform: none;
+  background-color: #fff;
+  position: relative;
+  border: 1px solid #212121;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  font-size: 1em;
+  padding: 0;
+}
+
+.videos .boton-siguiente.oscuro{
+  background-color: #212121;
+}
+
+#video-caja{
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#video-caja.js{
+  height: 600px;
+}
+
+.vid-funcional, .vid-inicio{
+  transition: all 0.5s;
+  top: 50px;
+  position:absolute;
+  right: -1200px;
+}
+
+.vid-funcional.visible, .vid-inicio.visible{
+  right: 50%;
+  transform:translateX(50%);
+}
+
+.vid{
+  transition: all 0.5s;
+  display: none;
+  top: 150px;
+  position:absolute;
+  right: 50%;
+  transform:translateX(50%);
+}
+
+.vid.derecha {
+  transition: all 0.5s;
+  transform:translateX(500%);
+}
+
+.vid.izquierda{
+  transition: all 0.5s;
+  transform:translateX(-500%);
+}
+
+.vid.visible{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.saltar-contenido {
+  position:absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 1.4em;
+  color: #fff;
+}
+
+.saltar-contenido:focus {
+  transition: all 0.5s;
+  color: blue;
+}
+
+.titulo-youtube {
+  display:none;
+  padding: 0.5em;
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+
+.titulo-youtube.visible {
+  display:block;
+  top: 50px;
+  position:absolute;
+  right: 50%;
+  transform:translateX(50%);
+}
+
+.noscript {
+  text-align: center;
+}
+
+#entrenadores{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#entrenadores>*{
+  width: 80%;
+}
+
+#entrenadores img {
+  max-width: 100%;
+}
+
+#entrenadores p {
+  text-align: center;
+}
+
+/*Inicio*/
+.descripcion-inicio div {
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+}
+
+.oculto {
+  color: #fff;
+}
+
+
+/*Maquinas*/
+#galeriaMaquinas.contenido-grande {
+display: block;
+width: 100%;
+padding: 0;
+overflow: hidden;
+}
+
+.wp-block-gallery{
+width: 90%;
+padding: 0;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-row-gap: 10px;
+grid-column-gap: 10px;
+margin-bottom: 20px;
+}
+
+.blocks-gallery-item {
+-webkit-filter: grayscale(1);
+-moz-filter: grayscale(1);
+-ms-filter: grayscale(1);
+-o-filter: grayscale(1);
+filter: grayscale(1);
+transition: all 0.5s;
+}
+
+.blocks-gallery-item.visible {
+-webkit-filter: grayscale(0);
+-moz-filter: grayscale(0);
+-ms-filter: grayscale(0);
+-o-filter: grayscale(0);
+filter: grayscale(0);
+}
+
+#galeriaMaquinas .saltar-contenido {
+position: relative;
+margin: auto;
+}
+
+#panorama {
+display:none;
+}
+
+#panorama.visible {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+overflow: hidden;
+margin-top: 50px;
+}
+
+#panorama button {
+flex: 0.5;
+}
+
+#panoramaVentana{
+width: 60%;
+height: 228px;
+background-image: url('https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/IMG-20190507-WA0002.jpg');
+background-size: cover;
+background-position: 50% 0;
+}
+
+#panorama #izquierda, #panorama #derecha {
+background-color: #fff;
+border: none;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+max-width: 25px;
+}
+
+#panorama #derecha {
+background-image: url('https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/chevron-right.png');
+}
+
+#panorama #izquierda {
+background-image: url('https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/chevron-left.png');
+}
+
+#panorama #derecha.inactive, #panorama #izquierda.inactive {
+opacity: 0.5;
+}
+
+/*Servicios*/
+#popUp{
+  display:none;
+  z-index: 0;
+}
+
+#popUp.abierto {
+  display: block;
+  z-index: 5;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+#popUp p{
+  font-size: 1.6em;
+}
+
+#popBox {
+  background-color: #fff;
+  z-index: 1;
+  width: 300px;
+  bottom: 30%;
+  border: 1px solid #3a3a3a;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+#overlay{
+  display:none;
+  z-index: 0;
+}
+
+#overlay.abierto {
+  display:block;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.cerrar:link,
+.cerrar:visited {
+  position: absolute;
+  top: -0.75em;
+  right: -0.75em;
+  display: block;
+  width: 2em;
+  height: 2em;
+  line-height: 1.8;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 .5rem .5rem rba(0,0,0,.5);
+}
+
+.cerrar:before {content:"X";}
+.cerrar:hover,
+.cerrar:active,
+.cerrar:focus {
+  box-shadow: 0 0 .5rem .5rem rba(255,0,0,.5);
+  background-color: #212121;
+  color: #fff;
+}
+
+.cerrar span {
+  text-indent: -200em;
+  display: block;
+}
+
+.vinculo-servicios{
+  text-decoration: underline;
+}
+
+/*Entrenador Virtual*/
+.descripcion-entrenador .vinculos {
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:3em;
+  margin-bottom:3em;
+  width: 90%;
+}
+
+.descripcion-entrenador .vinculos ul{
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.descripcion-entrenador .vinculos li {
+  padding: 0.3em;
+  font-size: 1.4em;
+  border-bottom: solid 2px #2b5164;
+}
+
+.descripcion-entrenador a{
+  padding: 0;
+  font-size: 1em;
+}
+
+.descripcion-entrenador p{
+  padding: 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+.informacion-caja.tutorial p {
+  width: 80%;
+}
+
+#promociones-bloq{
+  margin-top: 15px;
+  background-color: #fefb64;
+}
+
+#promociones-bloq p {
+  font-size: 1.6em;
+}
+
+@media (min-width: 700px) {
+  #popBox {
+    width: 600px;
+  }
+  #popUp.abierto {
+    left: 15%;
+  }
+}
+
+@media (min-width: 800px) {
+  .contenido-grande {
+    display:block;
+  }
+  .contenido-mov {
+    display:none;
+  }
+  .descripcion-inicio div{
+    background-color: #fff;
+    font-size: 1.4em;
+    width: 60%;
+  }
+  #entrenadores{
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+  #entrenadores>*{
+    width: 30%;
+  }
+  .informacion {
+    padding: 3em;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+  .informacion-caja {
+    border-top: none;
+    padding: 1em;
+    position: relative;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 0 1em #2b5164;
+  }
+  .informacion-caja.servicios {
+    width: 45%;
+    border: none;
+    box-shadow: none;
+  }
+  .informacion-caja.somos {
+    width: 45%;
+  }
+  .informacion-caja.servicios img {
+    border-radius: 10px;
+  }
+  .informacion-caja.tutorial {
+    width: 80%;
+    margin-bottom: 3em;
+  }
+  .informacion-caja h2 {
+    font-size: 1.2em;
+  }
+  #testimonios-caja {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+  }
+  .testimonio-text {
+    min-height: 200px;
+    display: flex;
+    width: 30%;
+  }
+  .tutoriales {
+    width: 80%;
+    margin:auto;
+  }
+  .informacion-caja.tutorial {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .titulo-youtube {
+    font-size: 1.6em;
+  }
+  #popUp.abierto {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #promociones-bloq{
+    margin-top: 15px;
+    background-color: #fff;
+    border-top: solid 2px #fefb64;
+  }
+  .wp-block-gallery{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+  #panorama.visible{
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  #panoramaVentana{
+    width: 50%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .descripcion-entrenador {
+    width: 70%;
+    margin:auto;
+  }
+  .informacion-caja.tutorial {
+    flex-direction: row;
+  }
+  .informacion-caja.tutorial div{
+    padding: 3em;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1230px) {
+  .informacion-caja h2 {
+    font-size: 1.6em;
+  }
+}
+
+/*IE*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  #galeriaMaquinas.contenido-grande {
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .wp-block-gallery{
+    width: 90%;
+    padding: 0;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .blocks-gallery-item {
+    width: 30%;
+    margin: 15px;
+    display:inline-block;
+  }
+
+  #panorama.visible{
+    display: none;
+  }
+}

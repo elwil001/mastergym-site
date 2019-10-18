@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+@font-face{
+    font-display: swap;
+  font-family: 'Gibson';
+  src: url('../fuentes/gibson-regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-display: swap;
+  font-family: 'Bevan';
+  src: url('../fuentes/Bevan-Regular.ttf') format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, nav a {
+  font-family: "Gibson", sans-serif;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+h1, h2 {
+  padding: 1em;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+h2:focus {
+  border: solid 1px black;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+nav a, footer h3, .ladrillos p, .ladrillos h1 {
+  font-family: 'Bevan';
+}
+
+p, button, a, .ladrillos h1 {
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+.ladrillos p {
+  font-size: 1em;
+  padding: 0;
+  text-shadow: 1px 1px 4px white;
+  text-transform: uppercase;
+}
+
+#ladrillo1 h1 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 4px white;
+}
+
+p, a, span, button, li {
+  font-family: "Gibson", sans-serif;
+  color: #212121;
+  letter-spacing: 0.1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  text-decoration: underline;
+}
+
+a:focus img {
+  border: solid 1px black;
+}
+
+p::selection, h1::selection, h2::selection, h3::selection, a::selection, li::selection{
+  background: #fefb64;
+}
+
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, a::-moz-selection{
+  background: #fefb64;
+}
+
+ul {
+  list-style: none;
+  padding: 1em;
+}
+
+li {
+  font-size: 1.2em;
+  list-style: none;
+}
+
+/*Header*/
+  nav {
+    height: 350px;
+    background-image: url(https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/ladrillos.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  #logo{
+    width: 80%;
+  }
+
+  #logo a {
+    padding: 0;
+  }
+
+  #logo img {
+    display: block;
+    margin: auto;
+    bottom: 5px;
+    max-width: 80%;
+    filter: grayscale(0);
+  }
+
+  .navlink.texto{
+    padding: 0;
+    flex: 1;
+    text-align: center;
+    align-self: flex-end;
+    overflow: visible;
+  }
+
+  .navlink.texto a{
+    padding: 0;
+    font-size: 1.2em;
+  }
+
+  #serviciosDiv {
+    height: 38px;
+    position: relative;
+  }
+
+  #serviciosMenu {
+    transition: all 0.5s;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+  }
+
+  #serviciosMenu a {
+    font-size: 1em;
+  }
+
+  #serviciosMenu.abierto {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+    clip: auto;
+  }
+
+  #serviciosBoton{
+    transition: all 0.5s;
+    position: absolute;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    transform: translateY(30%);
+    background-image: url('https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/chevron-down.png');
+  }
+
+  #serviciosBoton.abierto{
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: 700px) {
+    nav {
+      height: 300px;
+      align-items: flex-end;
+    }
+    #logo{
+      width: 33%;
+    }
+    .navlink.texto{
+      width: 33%;
+    }
+    .navlink.texto a{
+      font-size: 1.6em;
+    }
+    #serviciosDiv {
+      height: 42px;
+    }
+    #serviciosBoton{
+      display: none;
+    }
+    #serviciosDiv:hover #serviciosMenu {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+    clip: auto;
+    }
+  }
+
+/*Footer*/
+  footer {
+    border-top: solid 2px #fefb64;
+    position: relative;
+  }
+
+  footer section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em;
+  }
+
+  footer ul {
+    padding: 1em;
+  }
+
+  footer li {
+    color: #212121;
+    font-size: 1em;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
+
+  footer h2 {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+
+  #iconos-sociales{
+    flex-direction: row;
+    margin: auto;
+    width: 60%;
+    padding: 0;
+  }
+
+  #iconos-sociales div {
+    width: 40px;
+  }
+
+  #iconos-sociales img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+
+  @media (min-width: 500px) {
+    .ladrillos p {
+      font-size: 1.4rem;
+    }
+  }
+
+@media (min-width: 800px) {
+  footer {
+    background-color: #fefb64;
+    border-top: none;
+    overflow: hidden;
+  }
+  footer section{
+    flex-direction: row;
+  }
+  footer h3 {
+    text-align: center;
+  }
+  footer li {
+    font-size: 1.2em;
+  }
+  footer p {
+    font-size: 1.2em;
+  }
+  .ladrillos p, .ladrillos h1  {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .ladrillos p, #ladrillo1 h1  {
+    font-size: 3rem;
+    padding: 0;
+    text-shadow: 1px 1px 10px white;
+  }
+}
