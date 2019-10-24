@@ -86,7 +86,7 @@
 }
 
 .testimonios{
-  background-image: url(https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/textura1.png);
+  background-image: url('https://elwil001.github.io/mastergym-site/imagenes/textura1.png');
 }
 
 .testimonios h2{
@@ -124,12 +124,12 @@
 
 .videos #siguiente {
   right: 5%;
-  background-image: url('https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/chevron-right.png');
+  background-image: url('https://elwil001.github.io/mastergym-site/imagenes/chevron-right.png');
 }
 
 .videos #previo {
   left: 5%;
-  background-image: url('https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/chevron-left.png');
+  background-image: url('https://elwil001.github.io/mastergym-site/imagenes/chevron-left.png');
 }
 
 .videos #siguiente.active:hover, .videos #siguiente.active:focus, .videos #previo.active:hover, .videos #previo.active:focus {
@@ -335,7 +335,7 @@ flex: 0.5;
 #panoramaVentana{
 width: 60%;
 height: 228px;
-background-image: url('https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/IMG-20190507-WA0002.jpg');
+background-image: url('https://elwil001.github.io/mastergym-site/imagenes/IMG-20190507-WA0002.jpg');
 background-size: cover;
 background-position: 50% 0;
 }
@@ -350,11 +350,11 @@ max-width: 25px;
 }
 
 #panorama #derecha {
-background-image: url('https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/chevron-right.png');
+background-image: url('https://elwil001.github.io/mastergym-site/imagenes/chevron-right.png');
 }
 
 #panorama #izquierda {
-background-image: url('https://mastergymbarranco.com/wp-content/themes/MasterGym/imagenes/chevron-left.png');
+background-image: url('https://elwil001.github.io/mastergym-site/imagenes/chevron-left.png');
 }
 
 #panorama #derecha.inactive, #panorama #izquierda.inactive {
